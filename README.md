@@ -1,6 +1,7 @@
 # Documentation on setting up the server, installed the web server, deployed the HTML page, and configured networking
 
 -> Public IP address - http://18.184.216.143/
+-> Domain name - https://alt-school-africa-smoky.vercel.app/
 
 # How I Installed Ubuntu through cloud platform (AWS)
 -> I signed in to my AWS console account
@@ -72,3 +73,14 @@
 -> sudo certbot --apache
 -> Enter the custom domain name created with vercel
 -> Certbot will automatically configure Apache to use HTTPS
+
+
+# To Transfer file from the local directory to the ubuntu server where Apache serves files
+-> Ensure the required permissions to access and write to the /var/www/html/ directory are set
+-> Ensure the Apache service is running to serve files from /var/www/html/
+-> Navigate to the directory where your file is located through your terminal
+-> scp -i /path/to/your-key.pem /path/to/your/file username@ubuntu-server:/var/www/html/
+eg: scp -i C:/Users/BESTMUMEVER/Downloads/"AltSchool African Project Exam.pem" C:/Users/BESTMUMEVER/Documents/"Webpage Screenshot.docx" ubuntu@ec2-18-184-216-143.eu-central-1.compute.amazonaws.com:/var/www/html/
+
+nb: ubuntu uses quotation mark ("") to enclose files with spaces inbetween their names.
+nb: ubuntu uses backward slash (\) to remove spaces inbetween names of a file or directory 
