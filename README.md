@@ -54,4 +54,21 @@
 
 # To deploy html page on vercel
 -> Create a Vercel Account (www.vercel.com)
--> 
+-> Link it to your github account
+-> Import a repository from your github account
+-> Configure the Project
+-> Add domain custom domain
+-> Go to the domain registrar's DNS settings
+-> Add the DNS records provided by Vercel
+-> For A records: Point to Vercel's IP addresses
+-> Vercel will automatically provision an SSL certificate for the custom domain
+-> Domain name has successfully been assigned
+
+# Configure HTTPS for your web server using a free SSL certificate
+-> sudo apt update
+-> sudo apt install certbot python3-certbot-apache
+-> sudo yum install epel-release /*to enable EPEL repository*/
+-> sudo yum install certbot python3-certbot-apache /*to install certbot on apache*/
+-> sudo certbot --apache
+-> Enter the custom domain name created with vercel
+-> Certbot will automatically configure Apache to use HTTPS
