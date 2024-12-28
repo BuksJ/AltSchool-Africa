@@ -1,11 +1,11 @@
 # Documentation on setting up the server, installed the web server, deployed the HTML page, and configured networking
 
--> Public IP address - http://18.184.216.143/;
+-> Public IP address - http://18.184.216.143/\n
 -> Domain name - https://alt-school-africa-smoky.vercel.app/
 
 # How I Installed Ubuntu through cloud platform (AWS)
--> I signed in to my AWS console account
--> Clicked on EC2
+-> I signed in to my AWS console account\n
+-> Clicked on EC2\n
 -> I chose Frankfurt as my location
 -> Navigated to Lauch the Instance
 -> Assigned a name to the Instance
