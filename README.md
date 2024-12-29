@@ -1,7 +1,7 @@
 # Documentation on setting up the server, installed the web server, deployed the HTML page, and configured networking
 
--> Public IP address - http://18.184.216.143/\n
--> Domain name - https://alt-school-africa-smoky.vercel.app/
+echo "-> Public IP address - http://18.184.216.143/\n"
+echo "-> Domain name - https://alt-school-africa-smoky.vercel.app/\n"
 
 # How I Installed Ubuntu through cloud platform (AWS)
 -> I signed in to my AWS console account\n
